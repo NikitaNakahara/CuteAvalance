@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/CuteAvalance.dir/main.cpp.o  -o CuteAvalance  ../Graphic/libGraphic.a ../Graphic/glfw/src/libglfw3.a -lpthread /usr/lib/x86_64-linux-gnu/librt.so -lm -ldl ../Graphic/glad/libglad.a 

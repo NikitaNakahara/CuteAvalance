@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Core/main.cpp
+Graphic/Window.hpp
+-
+iostream
+-
+
+/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/include/Graphic/Window.hpp
+
