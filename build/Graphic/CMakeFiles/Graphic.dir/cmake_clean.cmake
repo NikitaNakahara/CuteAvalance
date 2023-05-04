@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Graphic.dir/src/Renderer.cpp.o"
   "CMakeFiles/Graphic.dir/src/Window.cpp.o"
   "libGraphic.a"
   "libGraphic.pdb"

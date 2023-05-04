@@ -70,17 +70,32 @@ Graphic/CMakeFiles/Graphic.dir/src/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphic.dir/src/Window.cpp.s"
 	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/src/Window.cpp" -o CMakeFiles/Graphic.dir/src/Window.cpp.s
 
+Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.o: Graphic/CMakeFiles/Graphic.dir/flags.make
+Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.o: /home/nikita/Рабочий\ стол/dev-cpp/CuteAvalance/src/Graphic/src/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.o"
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Graphic.dir/src/Renderer.cpp.o -c "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/src/Renderer.cpp"
+
+Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graphic.dir/src/Renderer.cpp.i"
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/src/Renderer.cpp" > CMakeFiles/Graphic.dir/src/Renderer.cpp.i
+
+Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphic.dir/src/Renderer.cpp.s"
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/src/Renderer.cpp" -o CMakeFiles/Graphic.dir/src/Renderer.cpp.s
+
 # Object files for target Graphic
 Graphic_OBJECTS = \
-"CMakeFiles/Graphic.dir/src/Window.cpp.o"
+"CMakeFiles/Graphic.dir/src/Window.cpp.o" \
+"CMakeFiles/Graphic.dir/src/Renderer.cpp.o"
 
 # External object files for target Graphic
 Graphic_EXTERNAL_OBJECTS =
 
 Graphic/libGraphic.a: Graphic/CMakeFiles/Graphic.dir/src/Window.cpp.o
+Graphic/libGraphic.a: Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.o
 Graphic/libGraphic.a: Graphic/CMakeFiles/Graphic.dir/build.make
 Graphic/libGraphic.a: Graphic/CMakeFiles/Graphic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGraphic.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libGraphic.a"
 	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic" && $(CMAKE_COMMAND) -P CMakeFiles/Graphic.dir/cmake_clean_target.cmake
 	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Graphic.dir/link.txt --verbose=$(VERBOSE)
 

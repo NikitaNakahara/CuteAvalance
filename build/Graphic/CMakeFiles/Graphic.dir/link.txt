@@ -1,2 +1,2 @@
-/usr/bin/ar qc libGraphic.a  CMakeFiles/Graphic.dir/src/Window.cpp.o
+/usr/bin/ar qc libGraphic.a  CMakeFiles/Graphic.dir/src/Window.cpp.o CMakeFiles/Graphic.dir/src/Renderer.cpp.o
 /usr/bin/ranlib libGraphic.a

@@ -64,7 +64,11 @@ GL/gl.h
 GL/glext.h
 -
 
+/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/include/Graphic/Renderer.hpp
+
 /home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/include/Graphic/Window.hpp
+Graphic/Renderer.hpp
+-
 
 /home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/src/Window.cpp
 ../include/Graphic/Window.hpp

@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -124,16 +112,28 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Graphic/CMakeFiles/progress.marks"
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Graphic/all
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/Game/CMakeFiles/progress.marks"
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Game/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Graphic/clean
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Game/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,12 +143,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Graphic/preinstall
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Game/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Graphic/preinstall
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Game/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -157,73 +157,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Graphic/CMakeFiles/Graphic.dir/rule:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Graphic/CMakeFiles/Graphic.dir/rule
-.PHONY : Graphic/CMakeFiles/Graphic.dir/rule
+Game/CMakeFiles/Game.dir/rule:
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f CMakeFiles/Makefile2 Game/CMakeFiles/Game.dir/rule
+.PHONY : Game/CMakeFiles/Game.dir/rule
 
 # Convenience name for target.
-Graphic: Graphic/CMakeFiles/Graphic.dir/rule
+Game: Game/CMakeFiles/Game.dir/rule
 
-.PHONY : Graphic
+.PHONY : Game
 
 # fast build rule for target.
-Graphic/fast:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/build
-.PHONY : Graphic/fast
+Game/fast:
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/build
+.PHONY : Game/fast
 
-src/Renderer.o: src/Renderer.cpp.o
+src/GameObject.o: src/GameObject.cpp.o
 
-.PHONY : src/Renderer.o
-
-# target to build an object file
-src/Renderer.cpp.o:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.o
-.PHONY : src/Renderer.cpp.o
-
-src/Renderer.i: src/Renderer.cpp.i
-
-.PHONY : src/Renderer.i
-
-# target to preprocess a source file
-src/Renderer.cpp.i:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.i
-.PHONY : src/Renderer.cpp.i
-
-src/Renderer.s: src/Renderer.cpp.s
-
-.PHONY : src/Renderer.s
-
-# target to generate assembly for a file
-src/Renderer.cpp.s:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/src/Renderer.cpp.s
-.PHONY : src/Renderer.cpp.s
-
-src/Window.o: src/Window.cpp.o
-
-.PHONY : src/Window.o
+.PHONY : src/GameObject.o
 
 # target to build an object file
-src/Window.cpp.o:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/src/Window.cpp.o
-.PHONY : src/Window.cpp.o
+src/GameObject.cpp.o:
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/GameObject.cpp.o
+.PHONY : src/GameObject.cpp.o
 
-src/Window.i: src/Window.cpp.i
+src/GameObject.i: src/GameObject.cpp.i
 
-.PHONY : src/Window.i
+.PHONY : src/GameObject.i
 
 # target to preprocess a source file
-src/Window.cpp.i:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/src/Window.cpp.i
-.PHONY : src/Window.cpp.i
+src/GameObject.cpp.i:
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
 
-src/Window.s: src/Window.cpp.s
+src/GameObject.s: src/GameObject.cpp.s
 
-.PHONY : src/Window.s
+.PHONY : src/GameObject.s
 
 # target to generate assembly for a file
-src/Window.cpp.s:
-	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/src/Window.cpp.s
-.PHONY : src/Window.cpp.s
+src/GameObject.cpp.s:
+	cd "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build" && $(MAKE) -f Game/CMakeFiles/Game.dir/build.make Game/CMakeFiles/Game.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
 
 # Help Target
 help:
@@ -232,18 +205,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Graphic"
-	@echo "... src/Renderer.o"
-	@echo "... src/Renderer.i"
-	@echo "... src/Renderer.s"
-	@echo "... src/Window.o"
-	@echo "... src/Window.i"
-	@echo "... src/Window.s"
+	@echo "... install/local"
+	@echo "... Game"
+	@echo "... src/GameObject.o"
+	@echo "... src/GameObject.i"
+	@echo "... src/GameObject.s"
 .PHONY : help
 
 

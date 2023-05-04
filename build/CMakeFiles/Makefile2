@@ -175,12 +175,12 @@ Graphic/CMakeFiles/Graphic.dir/all: Graphic/glfw/src/CMakeFiles/glfw.dir/all
 Graphic/CMakeFiles/Graphic.dir/all: Graphic/glad/CMakeFiles/glad.dir/all
 	$(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/depend
 	$(MAKE) -f Graphic/CMakeFiles/Graphic.dir/build.make Graphic/CMakeFiles/Graphic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=3,4 "Built target Graphic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=3,4,5 "Built target Graphic"
 .PHONY : Graphic/CMakeFiles/Graphic.dir/all
 
 # Build rule for subdir invocation for target.
 Graphic/CMakeFiles/Graphic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 28
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 29
 	$(MAKE) -f CMakeFiles/Makefile2 Graphic/CMakeFiles/Graphic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 0
 .PHONY : Graphic/CMakeFiles/Graphic.dir/rule
@@ -229,7 +229,7 @@ Graphic/glfw/CMakeFiles/uninstall.dir/clean:
 Graphic/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) -f Graphic/glfw/src/CMakeFiles/update_mappings.dir/build.make Graphic/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) -f Graphic/glfw/src/CMakeFiles/update_mappings.dir/build.make Graphic/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=31 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=32 "Built target update_mappings"
 .PHONY : Graphic/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -256,7 +256,7 @@ Graphic/glfw/src/CMakeFiles/update_mappings.dir/clean:
 Graphic/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f Graphic/glfw/src/CMakeFiles/glfw.dir/build.make Graphic/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f Graphic/glfw/src/CMakeFiles/glfw.dir/build.make Graphic/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target glfw"
 .PHONY : Graphic/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -283,7 +283,7 @@ Graphic/glfw/src/CMakeFiles/glfw.dir/clean:
 Graphic/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) -f Graphic/glad/CMakeFiles/glad.dir/build.make Graphic/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) -f Graphic/glad/CMakeFiles/glad.dir/build.make Graphic/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=5,6 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" --progress-num=6,7 "Built target glad"
 .PHONY : Graphic/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -317,7 +317,7 @@ Core/CMakeFiles/CuteAvalance.dir/all: Graphic/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 Core/CMakeFiles/CuteAvalance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 30
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 31
 	$(MAKE) -f CMakeFiles/Makefile2 Core/CMakeFiles/CuteAvalance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/build/CMakeFiles" 0
 .PHONY : Core/CMakeFiles/CuteAvalance.dir/rule

@@ -9,8 +9,16 @@
 /home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Core/main.cpp
 Graphic/Window.hpp
 -
+Graphic/Renderer.hpp
+-
 iostream
 -
+functional
+-
+
+/home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/include/Graphic/Renderer.hpp
 
 /home/nikita/Рабочий стол/dev-cpp/CuteAvalance/src/Graphic/include/Graphic/Window.hpp
+Graphic/Renderer.hpp
+-
 
